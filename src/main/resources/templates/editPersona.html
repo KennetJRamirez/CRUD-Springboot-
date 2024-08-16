@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Editar Persona</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Editar Persona</h1>
+        <form th:action="@{/personas/update}" th:object="${persona}" method="post" class="custom-form">
+            <input type="hidden" th:field="*{id}" />
+            <div class="custom-row">
+                <label>Nombre:</label>
+                <input type="text" th:field="*{nombre}" />
+            </div>
+            <div class="custom-row">
+                <label>Apellido:</label>
+                <input type="text" th:field="*{apellido}" />
+            </div>
+            <div class="custom-row">
+                <label>Correo:</label>
+                <input type="text" th:field="*{correo}" />
+            </div>
+            <div class="custom-button">
+                <button type="submit">Actualizar</button>
+            </div>
+        </form>
+        <a href="/personas" class="custom-back-link">Volver a la lista</a>
+    </div>
+</body>
+
+</html>

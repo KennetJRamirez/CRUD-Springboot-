@@ -1,0 +1,125 @@
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+table.contenedor {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+table.contenedor th,
+table.contenedor td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+table.contenedor th {
+  background-color: #f4f4f4;
+}
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-icon {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.action-link {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #007bff;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}
+
+.create-link {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.create-link:hover {
+  text-decoration: underline;
+}
+
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-row {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  text-align: left;
+}
+
+.custom-row label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.custom-row input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.custom-row input:focus {
+  border-color: #16a085;
+  box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
+}
+
+.custom-button button {
+  width: 100%;
+  padding: 10px;
+  background: #16a085;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.custom-button button:hover {
+  background: #12876f;
+}
+
+.custom-back-link {
+  display: block;
+  margin-top: 20px;
+  color: #16a085;
+  text-decoration: none;
+}
+
+.custom-back-link:hover {
+  text-decoration: underline;
+}
